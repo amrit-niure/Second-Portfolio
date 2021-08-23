@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   overflow-x: hidden;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:4vw;
+    padding-right:4vw;
+    background:#69bac7;
+    background: url("back1.jpeg");
+
+    height:10vh;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top:2vh;
+    justify-content: left;
+    flex: 1;
+   
+    
+}
+.logo a{
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex: 2;
+    height: 100%;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+   width: 100%;
+   margin-top: 5.4vh;
+   height: 100%;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top:5.4vh;
+    padding-bottom: 2vh;
+}
+nav ul li a:hover{
+  background-color:white;
+  color: black;
+    
+}
+
+/* ------------------------------------------------first page---------------------------------------------- */
+.first-page{
+    height:90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8vw;
+    background: url("back1.jpeg");
+    background-size:cover;
+    position: relative;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+    position: absolute;
+    top: 25%;
+}
+.hello ,.name , .short-line ,.find-me{
+    color: white;
+  
+}
+.name{
+    font-size:60px;
+}
+
+.social-links{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding-top: 1em;
+}
+.bottom-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 25%;
+}
+.find-me{
+    font-size: 25px;
+}
+i{
+    padding-right: 0.5em;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.fa-facebook:hover{
+    /* color: rgb(115, 115, 219); */
+    color: black;
+}
+.fa-instagram:hover{
+    /* color:rgb(243, 4, 44); */
+    color: black;
+}
+.fa-youtube:hover{
+    /* color:rgb(233, 34, 34); */
+    color: black;
+}
+.fa-github:hover{
+    color:teal;
+}
+.fa-twitter:hover{
+    /* color: rgb(31, 150, 197) */
+    color: black;
+}
+
+.extra-buttons{
+    position: absolute;
+    bottom: 45%;
+}
+button{
+    padding: 0.5em 1em;
+    font-size: 20px;
+    font-weight: 50;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    backdrop-filter: blur(15px);
+}
+button:hover{
+  background-color: white;
+  color: #000;
+}
+.hire-me{
+    margin-right: 1em;
+}
+/* -----------------------------------------------second-page---------------------- */
+
+.second-page{
+    height: 100vh;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding:5vh 5vw;
+    /* padding: 10vh 5vw; */
+    overflow-x: hidden;
+    background: linear-gradient(to right top, #a9b4b2,#6cdbeb);
+   
+}
+
+.my-skill-text{
+    color: purple;
+}
+.my-skill-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.my-skills{
+    font-size: 40px;
+}
+q{
+    font-size: 25px;
+}
+.my-skill-info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.html-container{
+    margin-top: 4em;
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px solid rgb(12, 11, 12);
+   
+   
+}
+.the-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color:rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px solid rgb(12, 11, 12);
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.3),rgba(255,255,255,0.05));
+}
+.the-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color:rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.0));
+}
+.the-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    transform:rotateY(180deg);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(255, 255, 255, 0.9);
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+}
+.the-card:hover{
+transform: rotateY(180deg);
+
+}
+img{
+height: 100px;
+}
+.short-line{
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------media query--------------------------------------- */
+@media screen and (max-width:768px) {
+.my-skill-info{
+    justify-content: center;
+}
+.second-page{
+    height: auto;
+}
+.name{
+    font-size: 40px;
+}
+
+.bottom-link{
+    bottom: 15%;
+}
+/* .extra-buttons{
+bottom: 55%;
+} */
+.my-skills{
+    font-size: 30px;
+}
+q{
+    font-size: 15px;
+}
+
+}
+
+/* -----------------------------------third page--------------------------- */
+.third-page{
+    width: 100vw;
+    height: 100vh;
+}
