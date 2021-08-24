@@ -37,7 +37,7 @@ header{
     padding-top:2vh;
     justify-content: left;
     flex: 1;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Dancing Script', cursive;
     font-weight: 100;
     opacity: 0.8;
@@ -46,6 +46,7 @@ header{
 .logo a{
     text-decoration: none;
     color: white;
+
 }
 
 nav{
@@ -61,6 +62,9 @@ nav ul{
     align-items:center;
    width: 100%;
    height: 100%;
+   font-family: 'Nanum Myeongjo', serif;
+   font-weight: 600;
+   /* font-size: 20px; */
 
 }
 nav ul li a {
@@ -244,6 +248,148 @@ button:hover{
 .hire-me{
     margin-right: 1em;
 }
+
+
+/* --------------------------------------------------------about-me----------------------------------------- */
+.about-me{
+    height:auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right top, #c99ec5,#6cdbeb);
+ 
+    font-weight: 100;
+    padding: 3vh 10vw;
+    color: purple;
+}
+.about-me-heading{
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 300;
+}
+.about-me-phrase{
+    font-size: 25px;
+    width: 100%;
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-me-phrase p{
+    padding: 0 1vw;
+}
+.about-me-phrase::before{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+}
+.about-me-phrase::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+}
+.about-me-middle{
+    /* height: 80vh; */
+    height: auto;
+    width: 100%;
+ padding-top: 3vh;
+    border-radius: 20px;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    font-family: 'Martel', serif;
+}
+.typing{
+    color: red;
+}
+.middle-left{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-right{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vh 3vw;
+}
+.middle-left img{
+    height: 400px;
+}
+.about-me-botom{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.middle-right h1{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+}
+.middle-right p{
+    text-align:justify;
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width:760px) {
+    .about-me-middle{
+        height: auto;
+    }
+    .middle-left{
+        height: auto;
+    }
+    .middle-right{
+        height: auto;
+        padding: 5vh 3vh;
+    }
+    .middle-right h1{
+        text-align: center;
+    }
+    .middle-right p{
+        text-align:justify;
+    }
+    .about-me-middle{
+        padding-top: 5vh;
+    }
+    .about-me-botom{
+       padding: 6vh 0;
+       
+    }
+    .about-me-botom p{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------------------------------------second-page---------------------- */
 
 .second-page{
@@ -272,7 +418,7 @@ button:hover{
 }
 
 .my-skills{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 40px;
 }
 q{
@@ -388,7 +534,7 @@ q{
 background-color: rgb(198, 230, 231);
 }
 .project-text{
-    height: 25vh;
+    height: 20vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -398,7 +544,7 @@ background-color: rgb(198, 230, 231);
     font-family: 'Nanum Myeongjo', serif;
 }
 .project-text h1{
-    font-weight: 300;
+    font-weight: 600;
     font-size: 40px;
 }
 .projects{
@@ -625,6 +771,7 @@ footer{
     width: 100%;
     /* background: linear-gradient(to right top, #a9b4b2,#6cdbeb); */
     background: rgb(238, 16, 71);
+   
 }
 .footer-heading{
     height: 10vh;
@@ -705,7 +852,7 @@ flex-direction: column;
 .footer-left p{
     color: white;
     text-align: left;
-  
+    font-family: 'Times New Roman', Times, serif;  
 
 }
 .footer-remain{
