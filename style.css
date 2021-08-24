@@ -13,15 +13,12 @@ header{
     align-items: center;
     padding-left:4vw;
     padding-right:4vw;
-    /* background:#69bac7; */
-    /* background: url("back1.jpeg"); */
-    background:rgba(255,255,255,0.0)
-
+    background: rgb(93, 202, 197);
     background-size: cover;
     backdrop-filter: blur(150px);
     height:10vh;
     width: 100%;
-    position: fixed;
+    position:fixed;
     z-index: 100;
 }
 .logo{
@@ -30,10 +27,14 @@ header{
     padding-top:2vh;
     justify-content: left;
     flex: 1;
-   
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    opacity: 0.8;
     
 }
 .logo a{
+    text-decoration: none;
     color: white;
 }
 
@@ -67,9 +68,64 @@ nav ul li a:hover{
     
 }
 
+@media screen and (max-width:560px) {
+    nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right bottom, rgba(255,255,255,1),rgba(175, 212, 209, 0.9));
+        /* background: rebeccapurple; */
+        backdrop-filter: blur(120px);
+        top:-150%;  
+        height:120vh;
+        left: 0%;
+        width: 100%;
+        border-radius: 20px;
+        /* display: none; */
+        clip-path: inset(100%);
+        -webkit-clip-path:inset(100%);
+        transition: all .5s ease-out;
+        pointer-events: none;
+        z-index: 3;
+        padding-top: 95px;
+        z-index: 5;
+    }
+
+    nav ul li{
+        display: flex;
+    }
+    nav ul li a{
+        padding-left: 10px;
+        color: purple
+          
+      }
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    .hamburger{
+        position:absolute;
+        z-index: 3;
+        cursor: pointer;
+        right: 5%;
+        top: 30%;
+        transform: translate(-5% -30%);
+    }
+    nav ul.open{
+        clip-path: inset(25% 15% 15% 15% round 20px);
+        -webkit-clip-path:inset(25% 15% 15% 15% round 20px);
+        transition: all .5s ease-out;
+        pointer-events: all;
+
+    }
+}
 /* ------------------------------------------------first page---------------------------------------------- */
 .first-page{
-    height:100vh;
+    height:90vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -80,6 +136,7 @@ nav ul li a:hover{
     background: url("back1.jpeg");
     background-size:cover;
     position: relative;
+    top: 10vh;
 }
 
 .intro-text{
@@ -124,22 +181,22 @@ i{
 }
 
 .fa-facebook:hover{
-    /* color: rgb(115, 115, 219); */
+  
     color: black;
 }
 .fa-instagram:hover{
-    /* color:rgb(243, 4, 44); */
+   
     color: black;
 }
 .fa-youtube:hover{
-    /* color:rgb(233, 34, 34); */
+   
     color: black;
 }
 .fa-github:hover{
     color:teal;
 }
 .fa-twitter:hover{
-    /* color: rgb(31, 150, 197) */
+   
     color: black;
 }
 
@@ -171,6 +228,7 @@ button:hover{
     height: 100vh;
     height: auto;
     width: 100%;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     padding:5vh 5vw;
