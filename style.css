@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 body{
    overflow-x: hidden;
@@ -12,11 +13,16 @@ header{
     align-items: center;
     padding-left:4vw;
     padding-right:4vw;
-    background:#69bac7;
-    background: url("back1.jpeg");
+    /* background:#69bac7; */
+    /* background: url("back1.jpeg"); */
+    background:rgba(255,255,255,0.0)
 
+    background-size: cover;
+    backdrop-filter: blur(150px);
     height:10vh;
     width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 .logo{
     display: flex;
@@ -63,7 +69,7 @@ nav ul li a:hover{
 
 /* ------------------------------------------------first page---------------------------------------------- */
 .first-page{
-    height:90vh;
+    height:100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +170,7 @@ button:hover{
 .second-page{
     height: 100vh;
     height: auto;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding:5vh 5vw;
@@ -175,7 +181,6 @@ button:hover{
 }
 
 .my-skill-text{
-    color: purple;
 }
 .my-skill-text{
     display: flex;
@@ -183,8 +188,11 @@ button:hover{
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    color: purple;
 }
+
 .my-skills{
+    font-weight: 300;
     font-size: 40px;
 }
 q{
@@ -248,8 +256,9 @@ q{
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     flex-direction: column;
+    align-items: center;
     background-color:rgba(255, 255, 255, 0.9);
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
 }
@@ -266,7 +275,7 @@ height: 100px;
 
 
 /* ---------------------------------------------------media query--------------------------------------- */
-@media screen and (max-width:768px) {
+@media screen and (max-width:1258px) {
 .my-skill-info{
     justify-content: center;
 }
@@ -294,6 +303,326 @@ q{
 
 /* -----------------------------------third page--------------------------- */
 .third-page{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
+background-color: rgb(198, 230, 231);
+}
+.project-text{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-text h1{
+    font-weight: 300;
+    font-size: 40px;
+}
+.projects{
+    width: 100%;
+    height: auto;
+    padding: 10vh 10vw;
+}
+.first-project{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+  padding-bottom: 15vh;
+   flex-wrap: wrap;
+}
+.second-project{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15vh;
+   flex-wrap: wrap-reverse;
+}
+.third-project{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15vh;
+   flex-wrap: wrap;
+}
+.fourth-project{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15vh;
+   flex-wrap: wrap-reverse;
+}
+.fifth-project{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+   flex-wrap: wrap-reverse;
+}
+.left{
+    max-width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+   
+   
+}
+.right{
+    width: 500px;
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+   flex-direction: column;
+    padding: 0 3vh;
+    
+}
+.left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.right h1,p{
+    color: purple;
+    text-align: center;
+}
+@media screen and (max-width:1257px) {
+    .first-project,.second-project ,.third-project,.fourth-project,.fifth-project{
+        justify-content: center;
+    }
+    .first-project ,.second-project ,.third-project,.fourth-project,.fifth-project{
+        padding-bottom: 0vh;
+    }
+    .right{
+        height: 300px;
+
+    }
+ .four-center{
+     justify-content: center;
+ }
+ .project-text h1{
+    margin-top: 10vh;
+    font-size: 20px;
+}
+}
+
+.project-text{
+    color: purple;
+}
+.project-text h1{
+    margin-top: 10vh;
+    font-size: 40px;
+}
+
+/* ===================================================four=============================================== */
+.four{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10vw;
+    padding-bottom: 10vh;
+    background-color: white;
+    background: linear-gradient(to right top, #a9b4b2,#6cdbeb);
+}
+.four-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   padding: 10vh;
+    height: 15vh;
+    width: auto;
+    color: purple;
+}
+.four-top h1{
+    font-weight: 300;
+    font-size: 40px;
+}
+.four-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+.four-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+}
+.programming{
+    width: 250px;
+    height: 400px;
+    background-color: white;
+     backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3vh 0;
+}
+.four-photo{
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 10px teal;
+border-radius:20px;
+
+}
+.four-photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.four-text{
+    height: 50px;
+    width: 200px;
+    box-shadow: 2px 2px 10px teal;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.four-text h2{
+    font-weight: 100;
+    font-size: 25px;
+    color: purple;
+}
+
+
+@media screen and (max-width:620px) {
+
+ .four-center{
+     justify-content: center;
+     
+ }
+ .programming{
+     margin-top: 10vh;
+ 
+ }
+ .four{
+     position: relative;
+ }
+ .four-center{
+     padding-top: 10vh;
+ }
+ .four-top{
+     position: absolute;
+     z-index: 2;
+     top: 10px;
+
+ }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 100%;
+    background: linear-gradient(to right top, #a9b4b2,#6cdbeb);
+}
+.footer-heading{
+    height: 10vh;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding-left: 10vw;
+}
+.left-heading{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height:15vh;
+    width: 300px;
+}
+.left-heading h1{
+    font-weight: 100;
+    color: purple;
+    font-size: 20px;
+    padding-bottom: 5px;
+   
+}
+.left-heading::after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background: chocolate;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+ 
+    width: 100%;
+   
+    padding: 0 7vw;
+}
+
+.footer-left{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    color: purple;
+   
+}
+.footer-left ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.footer-left ul li i{
+    font-size: 20px;
+    color: purple;
+}
+.footer-left ul li i:hover{
+    font-size: 20px;
+    color:white;
+}
+.footer-left ul li i a{
+    color: purple;
+}
+.footer-left ul{
+display: flex;
+width: 100%;
+height:20vh;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.footer-left p{
+    color: purple;
+    text-align: left;
+  
+}
+.footer-remain{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, #a9b4b2,#6cdbeb);
 }
