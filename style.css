@@ -13,13 +13,14 @@ header{
     align-items: center;
     padding-left:4vw;
     padding-right:4vw;
-    background: rgb(93, 202, 197);
+    background: rgb(238, 16, 71);
     background-size: cover;
     backdrop-filter: blur(150px);
     height:10vh;
     width: 100%;
     position:fixed;
     z-index: 100;
+    transition: 0.5s;
 }
 .logo{
     display: flex;
@@ -526,7 +527,8 @@ background-color: rgb(198, 230, 231);
 .programming{
     width: 250px;
     height: 400px;
-    background-color: white;
+    /* background-color: white; */
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
      backdrop-filter: blur(15px);
     border-radius: 20px;
     box-shadow: 5px 5px 15px teal;
@@ -535,6 +537,9 @@ background-color: rgb(198, 230, 231);
     align-items: center;
     justify-content: space-evenly;
     padding: 3vh 0;
+}
+.programming:hover{
+    background: white;
 }
 .four-photo{
     height: 200px;
@@ -594,7 +599,8 @@ footer{
     flex-direction: column;
     height:auto;
     width: 100%;
-    background: linear-gradient(to right top, #a9b4b2,#6cdbeb);
+    /* background: linear-gradient(to right top, #a9b4b2,#6cdbeb); */
+    background: rgb(238, 16, 71);
 }
 .footer-heading{
     height: 10vh;
@@ -615,7 +621,7 @@ padding-left: 10vw;
 }
 .left-heading h1{
     font-weight: 100;
-    color: purple;
+    color: white;
     font-size: 20px;
     padding-bottom: 5px;
    
@@ -645,7 +651,7 @@ padding-left: 10vw;
     align-items: center;
 
     flex-direction: column;
-    color: purple;
+    color: white;
    
 }
 .footer-left ul li{
@@ -654,14 +660,15 @@ padding-left: 10vw;
 }
 .footer-left ul li i{
     font-size: 20px;
-    color: purple;
+     color: white;
 }
 .footer-left ul li i:hover{
     font-size: 20px;
     color:white;
 }
-.footer-left ul li i a{
-    color: purple;
+.last-footer li a{
+    color: white;
+    text-decoration: none;
 }
 .footer-left ul{
 display: flex;
@@ -672,9 +679,10 @@ flex-direction: column;
 }
 
 .footer-left p{
-    color: purple;
+    color: white;
     text-align: left;
   
+
 }
 .footer-remain{
     height: 5vh;
@@ -682,5 +690,9 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right top, #a9b4b2,#6cdbeb);
+    /* background: linear-gradient(to right top, #a9b4b2,#6cdbeb); */
+    background: rgb(240, 7, 57);
+}
+.footer-remain p{
+    color: white;
 }
