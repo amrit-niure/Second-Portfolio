@@ -1,3 +1,12 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +26,7 @@ header{
     background-size: cover;
     backdrop-filter: blur(150px);
     height:10vh;
-    width: 100%;
+    width: 100vw;
     position:fixed;
     z-index: 100;
     transition: 0.5s;
@@ -43,25 +52,23 @@ nav{
     display: flex;
     flex: 2;
     height: 100%;
-
+ width: auto;
 }
 nav ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-end; */
+    align-items:center;
    width: 100%;
-   margin-top: 5.4vh;
    height: 100%;
 
 }
 nav ul li a {
     text-decoration: none;
     color:white;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top:5.4vh;
-    padding-bottom: 2vh;
+    padding: 1em 2em;
+    border-radius: 30px;
+    
 }
 nav ul li a:hover{
   background-color:white;
@@ -96,11 +103,15 @@ nav ul li a:hover{
 
     nav ul li{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em;
     }
     nav ul li a{
-        padding-left: 10px;
-        color: purple
-          
+       
+        color: purple;
+ 
+       
       }
     .line{
         width: 30px;
@@ -126,7 +137,7 @@ nav ul li a:hover{
 }
 /* ------------------------------------------------first page---------------------------------------------- */
 .first-page{
-    height:90vh;
+    height:100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +148,7 @@ nav ul li a:hover{
     background: url("back1.jpeg");
     background-size:cover;
     position: relative;
-    top: 10vh;
+  
 }
 
 .intro-text{
@@ -170,6 +181,16 @@ nav ul li a:hover{
     justify-content: center;
     position: absolute;
     bottom: 25%;
+}
+#solid{
+    background: white;
+    color: purple;
+    border: 1px solid white;
+}
+#solid:hover{
+    background:transparent;
+    color: white;
+   
 }
 .find-me{
     font-size: 25px;
@@ -218,7 +239,7 @@ button{
 }
 button:hover{
   background-color: white;
-  color: #000;
+  color: purple;
 }
 .hire-me{
     margin-right: 1em;
@@ -229,7 +250,7 @@ button:hover{
     height: 100vh;
     height: auto;
     width: 100%;
-    margin-top: 10vh;
+    
     display: flex;
     flex-direction: column;
     padding:5vh 5vw;
@@ -239,14 +260,14 @@ button:hover{
    
 }
 
-.my-skill-text{
-}
+
 .my-skill-text{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    font-family: 'Nanum Myeongjo', serif;
     color: purple;
 }
 
@@ -374,6 +395,7 @@ background-color: rgb(198, 230, 231);
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .project-text h1{
     font-weight: 300;
@@ -453,6 +475,7 @@ background-color: rgb(198, 230, 231);
 .right h1,p{
     color: purple;
     text-align: center;
+    font-family: 'Zilla Slab', serif;
 }
 @media screen and (max-width:1257px) {
     .first-project,.second-project ,.third-project,.fourth-project,.fifth-project{
@@ -508,6 +531,7 @@ background-color: rgb(198, 230, 231);
 .four-top h1{
     font-weight: 300;
     font-size: 40px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .four-center{
     display: flex;
