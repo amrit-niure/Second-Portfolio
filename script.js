@@ -25,7 +25,13 @@ window.addEventListener("scroll",function(){
 
 
 //typing animation 
-var typed = new Typed(".typing",{
+var typed = new Typed(".typing1",{
+    strings: ["Programmer","Web Designer","Web Developer","Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+var typed = new Typed(".typing2",{
     strings: ["Programmer","Web Designer","Web Developer","Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,

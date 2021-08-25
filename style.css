@@ -34,7 +34,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    padding-top:2vh;
+    /* padding-top:2vh; */
     justify-content: left;
     flex: 1;
     font-size: 50px;
@@ -70,13 +70,13 @@ nav ul{
 nav ul li a {
     text-decoration: none;
     color:white;
-    padding: 1em 2em;
+    padding: 0.8em 1.5em;
     border-radius: 30px;
     
 }
 nav ul li a:hover{
   background-color:white;
-  color: black;
+  color: purple;
     
 }
 
@@ -162,14 +162,16 @@ nav ul li a:hover{
     justify-content: center;
     margin-bottom: 5vh;
     position: absolute;
-    top: 25%;
+    top: 30%;
+   
 }
 .hello ,.name , .short-line ,.find-me{
     color: white;
-  
+    font-family: 'Times New Roman', Times, serif;
 }
 .name{
     font-size:60px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .social-links{
@@ -184,7 +186,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 25%;
+    bottom: 3%;
 }
 #solid{
     background: white;
@@ -228,7 +230,7 @@ i{
 
 .extra-buttons{
     position: absolute;
-    bottom: 45%;
+    bottom: 20%;
 }
 button{
     padding: 0.5em 1em;
@@ -247,6 +249,36 @@ button:hover{
 }
 .hire-me{
     margin-right: 1em;
+}
+.first-mid{
+    font-size: 25px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 300;
+    color:white ;
+    position: absolute;
+    bottom: 35%;
+    width: max-content;
+    background: transparent;
+    backdrop-filter:blur(10px);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+.typing1{
+    color:rgb(211, 15, 15);
+}
+
+@media screen and (max-width:760px) {
+.bottom-link{
+    bottom: 5%;
+}
+.first-mid{
+    font-size: 20px;
+    bottom: 40%;
+}
+
+.extra-buttons{
+    bottom: 25%;
+}
 }
 
 
@@ -305,8 +337,8 @@ button:hover{
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
     font-family: 'Martel', serif;
 }
-.typing{
-    color: red;
+.typing2{
+    color: rgb(238, 16, 71);
 }
 .middle-left{
     width: 400px;
@@ -373,6 +405,9 @@ button:hover{
     }
     .about-me-botom p{
         text-align: center;
+    }
+    .amrit h1{
+        font-size: 30px;
     }
 }
 
@@ -512,9 +547,6 @@ height: 100px;
     font-size: 40px;
 }
 
-.bottom-link{
-    bottom: 15%;
-}
 /* .extra-buttons{
 bottom: 55%;
 } */
@@ -618,7 +650,7 @@ background-color: rgb(198, 230, 231);
     height: 100%;
     border-radius: 20px;
 }
-.right h1,p{
+.projects h1,p{
     color: purple;
     text-align: center;
     font-family: 'Zilla Slab', serif;
@@ -677,7 +709,7 @@ background-color: rgb(198, 230, 231);
 .four-top h1{
     font-weight: 300;
     font-size: 40px;
-    font-family: 'Nanum Myeongjo', serif;
+    /* font-family: 'Nanum Myeongjo', serif; */
 }
 .four-center{
     display: flex;
