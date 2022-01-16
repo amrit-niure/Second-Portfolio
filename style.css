@@ -149,7 +149,7 @@ nav ul li a:hover{
     justify-content: center;
     flex-direction: column;
     padding: 0 8vw;
-    background: url("back1.jpeg");
+    background-color: black;
     background-size:cover;
     position: relative;
   
