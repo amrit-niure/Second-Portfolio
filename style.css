@@ -22,7 +22,8 @@ header{
     align-items: center;
     padding-left:4vw;
     padding-right:4vw;
-    background: rgb(238, 16, 71);
+ background-color: black;
+ border-bottom:1px solid white;
     background-size: cover;
     backdrop-filter: blur(150px);
     height:10vh;
@@ -802,7 +803,7 @@ footer{
     height:auto;
     width: 100%;
     /* background: linear-gradient(to right top, #a9b4b2,#6cdbeb); */
-    background: rgb(238, 16, 71);
+    background: black;
    
 }
 .footer-heading{
@@ -894,8 +895,7 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     /* background: linear-gradient(to right top, #a9b4b2,#6cdbeb); */
-    background: rgb(240, 7, 57);
-}
+    background:black;
 .footer-remain p{
     color: white;
 }
